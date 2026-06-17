@@ -1,0 +1,33 @@
+first_name: Jiacheng
+last_name: Lai
+subtitle: Undergraduate student majoring in Mathematics and Applied Mathematics at Changsha University
+period: Sep 2023 - Present
+image: assets/img/profile.jpg
+image_alt: Portrait of Jiacheng Lai
+image_width: 900
+image_height: 675
+motto: Unmoved by worldly gain, unshaken by personal loss.
+
+bio:
+  - >-
+    I am currently working with
+    <a href="https://jsxy.ccsu.cn/info/1201/20094.htm">Prof. Lei Wang</a> and
+    <a href="https://cse.jsu.edu.cn/yjsjy/dsjj/0096bceb88e246e6a9abbc3929282658.htm">Prof. Zhen Zhang</a>
+    on machine learning methods for computational biology and drug discovery.
+  - >-
+    My research focuses on machine learning for computational biology and drug discovery, especially
+    drug-microbe association prediction, drug-drug interaction prediction, and protein-ligand binding
+    affinity prediction. Methodologically, I work with graph neural networks, sequence modeling,
+    attention-based multimodal fusion, and heterogeneous biological network inference.
+  - >-
+    My goal is to build models that are not only accurate on benchmarks, but also useful for discovering
+    biologically plausible associations and drug repurposing candidates from real-world data.
+
+links:
+  - label: Email
+    url: mailto:JiachengLai@outlook.com
+    title: JiachengLai@outlook.com
+  - label: GitHub
+    url: https://github.com/jiachenglai
+  - label: ORCID
+    url: https://orcid.org/0009-0003-6930-5953

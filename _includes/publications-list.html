@@ -1,0 +1,46 @@
+{% assign publications = site.data.publications %}
+
+<ol class="bibliography">
+  {% for pub in publications.items %}
+    <li>
+      <article {% if pub.id %}id="{{ pub.id }}"{% endif %} class="publication">
+        <img
+          class="publication-img"
+          src="{{ pub.image | relative_url }}"
+          alt="{{ pub.image_alt }}"
+        />
+        <div class="publication-body">
+          <h3>
+            {{ pub.title }}
+          </h3>
+          <p class="authors">
+            {{ pub.authors }}
+          </p>
+          <p class="venue">
+            {% if pub.status %}<span class="status-tag">{{ pub.status }}</span>{% endif %}{{ pub.venue }}
+          </p>
+          {% if pub.citation %}
+            <p class="citation">
+              {{ pub.citation }}
+            </p>
+          {% endif %}
+          {% if pub.abstract %}
+            <details class="abstract-toggle">
+              <summary>Abs</summary>
+              <p>
+                {{ pub.abstract }}
+              </p>
+            </details>
+          {% endif %}
+          {% if pub.links %}
+            <div class="pub-links">
+              {% for link in pub.links %}
+                <a href="{% if link.external %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}">{{ link.label }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+      </article>
+    </li>
+  {% endfor %}
+</ol>

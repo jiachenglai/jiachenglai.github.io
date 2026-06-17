@@ -1,0 +1,15 @@
+---
+layout: page
+title: CV
+permalink: /cv/
+---
+
+{% assign cv = site.data.cv %}
+
+<p>
+  {{ cv.description }}
+</p>
+
+<a class="text-button" href="{{ cv.file | relative_url }}">
+  {{ cv.button_label }}
+</a>

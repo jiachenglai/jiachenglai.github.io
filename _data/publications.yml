@@ -1,0 +1,44 @@
+title: Publications
+
+items:
+  - id: paper-gtfkan
+    bib_key: lai2025gtfkan
+    image: assets/img/papers/gtfkan.png
+    image_alt: Main figure for GTFKAN
+    title: "GTFKAN: A Novel Microbe-drug Association Prediction Model Based on Graph Transformer and Fourier Kolmogorov-Arnold Networks"
+    authors: <strong>Jiacheng Lai</strong>, Zhen Zhang, Bin Zeng, and Lei Wang*
+    venue: <em>Journal of Molecular Biology</em>, 437(17), 169201, 2025.
+    citation: "Lai, J., Zhang, Z., Zeng, B., &amp; Wang, L. (2025). GTFKAN: A Novel Microbe-drug Association Prediction Model Based on Graph Transformer and Fourier Kolmogorov-Arnold Networks. <em>Journal of Molecular Biology</em>, 437(17), 169201."
+    abstract: Microbes have been shown to be closely related to human health. We introduce GTFKAN, a model that combines Graph Transformation Networks with Fourier Kolmogorov-Arnold Networks to infer potential microbe-drug associations from heterogeneous biological networks. Experiments, ablation studies, and case studies indicate that GTFKAN can achieve competitive predictive performance and may serve as a useful microbe-drug association prediction tool.
+    links:
+      - label: Code
+        url: https://github.com/jiachenglai/GTFKAN
+        external: true
+      - label: Paper
+        url: assets/pdf/main.pdf
+
+  - bib_key: lai2026bmfn
+    image: assets/img/papers/bmfn.png
+    image_alt: Main figure for BMFN
+    title: "BMFN: Multimodal Feature Fusion Network for Drug-Mtb Affinity Prediction and Anti-tuberculosis Drug Repurposing"
+    authors: <strong>Jiacheng Lai</strong>, Zhen Zhang, Hao Yuan, and Lei Wang*
+    status: Under review
+    venue: <em>Bioinformatics</em>
+    abstract: BMFN is a deep learning framework designed for drug-Mtb target affinity prediction. It integrates dual-sequence encoding with channel-spatial attention, supernode-coupled heterogeneous graph learning, and gradient-boosted molecular fingerprints. Across curated Mtb-specific datasets and general benchmarks, BMFN showed strong predictive performance, interpretability, and potential utility for anti-tuberculosis drug repurposing.
+    links:
+      - label: Code
+        url: https://github.com/jiachenglai/BMFN
+        external: true
+
+  - bib_key: lai2026midsfn
+    image: assets/img/papers/midsfn.png
+    image_alt: Main figure for MiDSFN
+    title: "MiDSFN: A Novel Signature Fusion Learning Network for Potential Drug-Microbe Associations Prediction"
+    authors: <strong>Jiacheng Lai</strong>&dagger;, Xingye Xu&dagger;, Zhen Zhang*, Hao Yuan*, and Lei Wang
+    status: Manuscript completed
+    venue: Planned submission to BIBM 2026
+    abstract: MiDSFN is a node-to-node deep learning framework for drug-microbe association prediction. It constructs features from intrinsic biological characteristics, including drug SMILES strings, microbial 16S rDNA sequences, and taxonomic nomenclature, and integrates graph convolution, self-attention, bilinear attention, and residual neural networks to support cross-dataset transfer and cold-start prediction for novel entities.
+    links:
+      - label: Code
+        url: https://github.com/MagicWings49/MiDSFN
+        external: true

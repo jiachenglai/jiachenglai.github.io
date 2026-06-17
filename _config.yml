@@ -1,0 +1,55 @@
+title: Jiacheng Lai
+description: Academic homepage of Jiacheng Lai, undergraduate student in Mathematics and Applied Mathematics at Changsha University.
+url: "https://jiachenglai.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Shanghai
+
+author:
+  name: Jiacheng Lai
+  email: JiachengLai@outlook.com
+  github: jiachenglai
+  orcid: 0009-0003-6930-5953
+
+logo: /assets/img/favicon.svg
+image: /assets/img/og-image.svg
+
+copyright_year: 2026
+last_updated: Jun 17, 2026
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-scholar
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  posts_limit: 20
+
+scholar:
+  source: _bibliography
+  bibliography: papers.bib
+  style: apa
+  sort_by: year
+  order: descending
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .jekyll-cache
+  - .sass-cache
+  - node_modules
+  - vendor

@@ -1,0 +1,23 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+{% if site.posts.size > 0 %}
+  <table class="timeline-table compact">
+    <tbody>
+      {% for post in site.posts %}
+        <tr>
+          <th scope="row"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time></th>
+          <td>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            {% if post.description %}<br /><span class="post-description">{{ post.description }}</span>{% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% else %}
+  <p>This section will be updated with reading notes, research logs, and technical reflections.</p>
+{% endif %}

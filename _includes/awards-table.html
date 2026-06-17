@@ -1,0 +1,14 @@
+{% assign awards = site.data.awards %}
+
+<table class="timeline-table awards-table">
+  <tbody>
+    {% for award in awards.items %}
+      <tr>
+        <th scope="row"><time datetime="{{ award.datetime }}">{{ award.date }}</time></th>
+        <td>
+          {{ award.text }}
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>

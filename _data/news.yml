@@ -1,0 +1,18 @@
+title: News & Opportunities
+
+opportunity:
+  lead: I am actively seeking research opportunities, including fully funded Ph.D. programs, research-oriented Master's programs, and Research Assistant positions.
+  intro: "My research focuses on using machine learning to address core prediction problems in drug discovery, including:"
+  focus:
+    - title: Drug-drug interaction prediction
+      text: using multimodal drug features such as molecular graphs and SMILES encodings to predict synergistic or antagonistic effects between drugs.
+    - title: Protein-ligand binding affinity prediction
+      text: integrating target sequences and ligand chemical graphs for end-to-end deep prediction, with interest in generative methods such as diffusion models for binding conformation sampling.
+    - title: Heterogeneous biological network inference
+      text: predicting latent drug-microbe and drug-disease associations through graph autoencoders and adjacency matrix reconstruction when handcrafted biological features are limited.
+  closing: If you are looking for a collaborator familiar with bioinformatics, sequence modeling, graph neural networks, and multi-view data fusion, please feel free to contact me.
+
+items:
+  - date: 2025/05
+    datetime: 2025-05
+    text: Our paper on <a href="#paper-gtfkan">microbe-drug association prediction</a> was accepted by <em>Journal of Molecular Biology</em>.

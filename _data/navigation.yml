@@ -1,0 +1,14 @@
+- label: Home
+  url: "/#home"
+- label: Blog
+  url: "/#blog"
+- label: Publications
+  url: "/#publications"
+- label: Projects
+  url: "/#projects"
+- label: Awards
+  url: "/#awards"
+- label: Misc
+  url: "/#misc"
+- label: CV
+  url: "/#cv"

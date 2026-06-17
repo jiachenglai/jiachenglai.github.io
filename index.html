@@ -1,0 +1,151 @@
+---
+layout: default
+title: Academic Homepage
+---
+
+{% assign profile = site.data.profile %}
+{% assign news = site.data.news %}
+{% assign blog = site.data.blog %}
+{% assign publications = site.data.publications %}
+{% assign projects = site.data.projects %}
+{% assign awards = site.data.awards %}
+{% assign misc = site.data.misc %}
+{% assign cv = site.data.cv %}
+
+<main class="page-container">
+  <section id="home" class="about-section">
+    <h1><span class="name-main">{{ profile.first_name }}</span> <span class="name-accent">{{ profile.last_name }}</span></h1>
+    <p class="subtitle">
+      {{ profile.subtitle }} &middot; {{ profile.period }}
+    </p>
+
+    <figure class="profile">
+      <img
+        src="{{ profile.image | relative_url }}"
+        alt="{{ profile.image_alt }}"
+        width="{{ profile.image_width }}"
+        height="{{ profile.image_height }}"
+      />
+      <figcaption>
+        <span class="motto">{{ profile.motto }}</span>
+      </figcaption>
+    </figure>
+
+    <div class="bio">
+      {% for paragraph in profile.bio %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+
+    <div class="social-links" aria-label="Contact links">
+      {% for link in profile.links %}
+        <a href="{{ link.url }}" {% if link.title %}title="{{ link.title }}"{% endif %}>{{ link.label }}</a>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section id="news" class="section-block">
+    <h2><a href="#news">{{ news.title }}</a></h2>
+
+    <div class="opportunity-card">
+      <p class="opportunity-lead">
+        {{ news.opportunity.lead }}
+      </p>
+
+      <p>
+        {{ news.opportunity.intro }}
+      </p>
+
+      <ul class="research-list">
+        {% for item in news.opportunity.focus %}
+          <li>
+            <strong>{{ item.title }}:</strong> {{ item.text }}
+          </li>
+        {% endfor %}
+      </ul>
+
+      <p>
+        {{ news.opportunity.closing }}
+      </p>
+    </div>
+
+    <table class="timeline-table">
+      <tbody>
+        {% for item in news.items %}
+          <tr>
+            <th scope="row"><time datetime="{{ item.datetime }}">{{ item.date }}</time></th>
+            <td>{{ item.text }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <section id="blog" class="section-block">
+    <h2><a href="#blog">{{ blog.title }}</a></h2>
+    <table class="timeline-table compact">
+      <tbody>
+        {% if site.posts.size > 0 %}
+          {% for post in site.posts limit: 5 %}
+            <tr>
+              <th scope="row"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y/%m/%d" }}</time></th>
+              <td>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                {% if post.description %}<br /><span class="post-description">{{ post.description }}</span>{% endif %}
+              </td>
+            </tr>
+          {% endfor %}
+        {% else %}
+          {% for item in blog.items %}
+            <tr>
+              <th scope="row">
+                {{ item.date }}
+              </th>
+              <td>
+                {{ item.text }}
+              </td>
+            </tr>
+          {% endfor %}
+        {% endif %}
+      </tbody>
+    </table>
+  </section>
+
+  <section id="publications" class="section-block">
+    <h2><a href="#publications">{{ publications.title }}</a></h2>
+    {% include publications-list.html %}
+  </section>
+
+  <section id="projects" class="section-block split-list">
+    <h2><a href="#projects">{{ projects.title }}</a></h2>
+    {% include projects-grid.html %}
+  </section>
+
+  <section id="awards" class="section-block">
+    <h2><a href="#awards">{{ awards.title }}</a></h2>
+    {% include awards-table.html %}
+  </section>
+
+  <section id="misc" class="section-block misc-block">
+    <h2><a href="#misc">{{ misc.title }}</a></h2>
+    <p>
+      {{ misc.text_before_button }}
+      <button class="inline-image-trigger" type="button" aria-expanded="false" aria-controls="valorant-panel">
+        {{ misc.button_label }}
+      </button>{{ misc.text_after_button }}
+    </p>
+    <figure id="valorant-panel" class="inline-image-panel" hidden>
+      <img src="{{ misc.image | relative_url }}" alt="{{ misc.image_alt }}" loading="lazy" />
+    </figure>
+  </section>
+
+  <section id="cv" class="section-block cv-block">
+    <h2><a href="#cv">{{ cv.title }}</a></h2>
+    <p>
+      {{ cv.description }}
+    </p>
+    <a class="text-button" href="{{ cv.file | relative_url }}">
+      {{ cv.button_label }}
+    </a>
+  </section>
+</main>
