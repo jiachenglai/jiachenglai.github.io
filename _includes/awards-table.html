@@ -6,7 +6,21 @@
       <tr>
         <th scope="row"><time datetime="{{ award.datetime }}">{{ award.date }}</time></th>
         <td>
-          {{ award.text }}
+          {% if award.certificate %}
+            <button
+              class="award-certificate-trigger"
+              type="button"
+              aria-expanded="false"
+              aria-controls="award-certificate-{{ forloop.index }}"
+            >
+              {{ award.text }}
+            </button>
+            <figure id="award-certificate-{{ forloop.index }}" class="award-certificate-panel" hidden>
+              <img src="{{ award.certificate | relative_url }}" alt="{{ award.certificate_alt }}" loading="lazy" />
+            </figure>
+          {% else %}
+            {{ award.text }}
+          {% endif %}
         </td>
       </tr>
     {% endfor %}

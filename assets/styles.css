@@ -342,6 +342,39 @@ section[id] {
   color: var(--global-text);
 }
 
+.award-certificate-trigger {
+  display: inline;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--global-link);
+  font: inherit;
+  cursor: pointer;
+  text-align: left;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.award-certificate-trigger:hover {
+  color: var(--global-theme);
+}
+
+.award-certificate-panel {
+  margin: 12px 0 6px;
+}
+
+.award-certificate-panel img {
+  display: block;
+  width: min(100%, 680px);
+  max-height: 520px;
+  object-fit: contain;
+  border: 1px solid var(--global-border);
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
 .timeline-table.compact th,
 .timeline-table.compact td {
   padding-top: 8px;
