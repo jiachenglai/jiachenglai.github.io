@@ -33,17 +33,17 @@ layout: default
       </figcaption>
     </figure>
 
-    <p class="research-keywords" aria-label="Research keywords">
-      {% for keyword in profile.research_keywords %}
-        <span>{{ keyword }}</span>{% unless forloop.last %}<span class="keyword-separator" aria-hidden="true">&middot;</span>{% endunless %}
-      {% endfor %}
-    </p>
-
     <div class="bio">
       {% for paragraph in profile.bio %}
         <p>{{ paragraph }}</p>
       {% endfor %}
     </div>
+
+    <p class="research-keywords" aria-label="Research keywords">
+      {% for keyword in profile.research_keywords %}
+        <span>{{ keyword }}</span>{% unless forloop.last %}<span class="keyword-separator" aria-hidden="true">&middot;</span>{% endunless %}
+      {% endfor %}
+    </p>
 
     <div class="social-links" aria-label="Contact links">
       {% for link in profile.links %}
