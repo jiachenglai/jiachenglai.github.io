@@ -3,6 +3,7 @@
 This repository hosts the academic homepage for Jiacheng Lai at `https://jiachenglai.github.io`.
 
 The site is organized as a lightweight Jekyll project inspired by academic themes such as al-folio, while keeping the current custom visual design.
+It is deployed with GitHub Actions so that academic plugins such as `jekyll-scholar` can be used reliably.
 
 ## Structure
 
