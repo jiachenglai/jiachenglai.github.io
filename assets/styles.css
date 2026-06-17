@@ -142,6 +142,10 @@ a:hover {
 }
 
 .about-section h1 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 10px;
   margin: 0 0 4px;
   font-size: 40px;
   font-weight: 400;
@@ -153,10 +157,10 @@ a:hover {
 }
 
 .native-name {
-  margin: 0 0 4px;
-  color: var(--global-theme);
-  font-size: 18px;
-  letter-spacing: 0.04em;
+  color: color-mix(in srgb, var(--global-theme) 78%, var(--global-muted));
+  font-size: 19px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
 }
 
 .subtitle {
