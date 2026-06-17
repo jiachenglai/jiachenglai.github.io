@@ -2,8 +2,36 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   {% seo %}
+  <meta
+    name="keywords"
+    content="赖嘉成, Jiacheng Lai, Changsha University, Mathematics and Applied Mathematics, bioinformatics, computational biology, machine learning, drug discovery"
+  />
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml" />
   <link rel="alternate" href="{{ '/feed.xml' | relative_url }}" type="application/atom+xml" title="{{ site.title }}" />
   <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}" />
   <script src="{{ '/assets/script.js' | relative_url }}" defer></script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.data.profile.full_name }}",
+      "alternateName": "{{ site.data.profile.native_name }}",
+      "url": "{{ site.url }}{{ site.baseurl }}/",
+      "email": "{{ site.author.email }}",
+      "affiliation": {
+        "@type": "CollegeOrUniversity",
+        "name": "Changsha University"
+      },
+      "sameAs": [
+        "https://github.com/{{ site.author.github }}",
+        "https://orcid.org/{{ site.author.orcid }}"
+      ],
+      "knowsAbout": [
+        "machine learning",
+        "bioinformatics",
+        "computational biology",
+        "drug discovery"
+      ]
+    }
+  </script>
 </head>

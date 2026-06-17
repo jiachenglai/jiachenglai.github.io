@@ -152,6 +152,13 @@ a:hover {
   color: var(--global-theme);
 }
 
+.native-name {
+  margin: 0 0 4px;
+  color: var(--global-theme);
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
 .subtitle {
   margin: 0 0 24px;
   color: var(--global-muted);
