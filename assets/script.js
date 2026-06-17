@@ -4,7 +4,6 @@ const siteNav = document.querySelector(".site-nav");
 const navLinks = document.querySelectorAll('.site-nav a[href*="#"]');
 const imageTriggers = document.querySelectorAll(".inline-image-trigger");
 const valorantPanel = document.querySelector("#valorant-panel");
-const awardCertificateTriggers = document.querySelectorAll(".award-certificate-trigger");
 const navSections = Array.from(navLinks)
   .map((link) => document.querySelector(link.hash))
   .filter(Boolean);
@@ -69,19 +68,5 @@ imageTriggers.forEach((trigger) => {
     imageTriggers.forEach((item) => {
       item.setAttribute("aria-expanded", String(nextOpen));
     });
-  });
-});
-
-awardCertificateTriggers.forEach((trigger) => {
-  trigger.addEventListener("click", () => {
-    const panelId = trigger.getAttribute("aria-controls");
-    const panel = panelId ? document.getElementById(panelId) : null;
-    const nextOpen = panel?.hasAttribute("hidden") ?? false;
-    if (nextOpen) {
-      panel?.removeAttribute("hidden");
-    } else {
-      panel?.setAttribute("hidden", "");
-    }
-    trigger.setAttribute("aria-expanded", String(nextOpen));
   });
 });

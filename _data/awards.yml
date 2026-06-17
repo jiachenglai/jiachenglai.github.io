@@ -8,14 +8,14 @@ items:
     certificate_alt: Certificate for National Undergraduate Innovation and Entrepreneurship Training Program
   - date: 2024/12
     datetime: 2024-12
-    text: Second Prize, National College Students Mathematics Competition, Mathematics Category B
+    text: Second Prize, National College Student Mathematics Competition (Mathematics Group B)
     certificate: assets/img/awards/national-math-category-b-2024.jpg
-    certificate_alt: Certificate for National College Students Mathematics Competition, Mathematics Category B
+    certificate_alt: Certificate for National College Student Mathematics Competition, Mathematics Group B
   - date: 2024/12
     datetime: 2024-12
-    text: Second Prize, Hunan Provincial College Students Mathematics Competition, Mathematics Category B
+    text: Second Prize, Hunan Provincial College Student Mathematics Competition (Mathematics Group B)
     certificate: assets/img/awards/hunan-math-category-b-2024.jpg
-    certificate_alt: Certificate for Hunan Provincial College Students Mathematics Competition, Mathematics Category B
+    certificate_alt: Certificate for Hunan Provincial College Student Mathematics Competition, Mathematics Group B
   - date: 2025/02
     datetime: 2025-02
     text: Honorable Mention, COMAP MCM/ICM
