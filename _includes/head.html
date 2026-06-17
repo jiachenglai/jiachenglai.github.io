@@ -1,7 +1,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {% seo %}
+  {% seo title=false %}
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
   <meta
     name="keywords"
     content="{{ site.data.profile.native_name }}, {{ site.data.profile.full_name }}, Changsha University, Mathematics and Applied Mathematics, bioinformatics, computational biology, machine learning, drug discovery"

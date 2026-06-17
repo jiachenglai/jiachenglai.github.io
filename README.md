@@ -1,4 +1,4 @@
-# Jiacheng Lai Academic Homepage
+# Jiacheng Lai | 赖嘉成
 
 This repository hosts the academic homepage for Jiacheng Lai at `https://jiachenglai.github.io`.
 
