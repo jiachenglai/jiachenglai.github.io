@@ -188,7 +188,7 @@ a:hover {
 .profile .motto {
   color: var(--global-theme);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 10px;
+  font-size: 13px;
   font-style: italic;
   line-height: 1.35;
 }
@@ -711,7 +711,7 @@ section[id] {
   }
 
   .profile .motto {
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .research-keywords {
