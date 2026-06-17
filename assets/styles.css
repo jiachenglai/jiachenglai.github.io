@@ -156,13 +156,6 @@ a:hover {
   color: var(--global-theme);
 }
 
-.native-name {
-  color: color-mix(in srgb, var(--global-theme) 78%, var(--global-muted));
-  font-size: 19px;
-  font-weight: 400;
-  letter-spacing: 0.03em;
-}
-
 .subtitle {
   margin: 0 0 24px;
   color: var(--global-muted);
