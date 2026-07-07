@@ -355,63 +355,6 @@ section[id] {
   color: var(--global-text);
 }
 
-.award-certificate {
-  width: 100%;
-}
-
-.award-certificate summary {
-  display: inline;
-  color: var(--global-text);
-  cursor: pointer;
-  list-style: none;
-  text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--global-theme) 42%, transparent);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 4px;
-}
-
-.award-certificate summary::-webkit-details-marker {
-  display: none;
-}
-
-.award-certificate summary:hover {
-  color: var(--global-theme);
-}
-
-.award-certificate summary::after {
-  content: "certificate";
-  display: inline-flex;
-  align-items: center;
-  min-height: 20px;
-  margin-left: 8px;
-  padding: 0 7px;
-  border: 1px solid color-mix(in srgb, var(--global-theme) 24%, var(--global-border));
-  border-radius: 999px;
-  background: var(--global-theme-soft);
-  color: var(--global-theme);
-  font-size: 11px;
-  font-weight: 700;
-  text-decoration: none;
-  vertical-align: 1px;
-}
-
-.award-certificate-panel {
-  max-width: 680px;
-  margin: 12px 0 6px;
-}
-
-.award-certificate-panel img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: min(70vh, 520px);
-  object-fit: contain;
-  border: 1px solid var(--global-border);
-  border-radius: 6px;
-  background: #ffffff;
-  box-shadow: var(--shadow);
-}
-
 .timeline-table.compact th,
 .timeline-table.compact td {
   padding-top: 8px;
@@ -744,28 +687,6 @@ section[id] {
 
   .awards-table td {
     padding-bottom: 16px;
-  }
-
-  .award-certificate summary {
-    color: var(--global-text);
-    font-size: 15px;
-    line-height: 1.45;
-  }
-
-  .award-certificate summary::after {
-    display: none;
-  }
-
-  .award-certificate-panel {
-    width: 100%;
-    max-width: 100%;
-    margin: 10px 0 2px;
-  }
-
-  .award-certificate-panel img {
-    width: 100%;
-    max-width: 100%;
-    max-height: 58vh;
   }
 
   .bibliography {

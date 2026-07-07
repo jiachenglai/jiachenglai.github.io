@@ -5,18 +5,7 @@
     {% for award in awards.items %}
       <tr>
         <th scope="row"><time datetime="{{ award.datetime }}">{{ award.date }}</time></th>
-        <td>
-          {% if award.certificate %}
-            <details class="award-certificate">
-              <summary>{{ award.text }}</summary>
-              <figure class="award-certificate-panel">
-                <img src="{{ award.certificate | relative_url }}" alt="{{ award.certificate_alt }}" loading="lazy" />
-              </figure>
-            </details>
-          {% else %}
-            {{ award.text }}
-          {% endif %}
-        </td>
+        <td>{{ award.text }}</td>
       </tr>
     {% endfor %}
   </tbody>
