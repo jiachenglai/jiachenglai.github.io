@@ -18,4 +18,4 @@ items:
     text: I joined <a href="https://suat-sz.edu.cn/en/">Shenzhen University of Advanced Technology (SUAT)</a> as a Research Intern.
   - date: 2025/05
     datetime: 2025-05
-    text: Our paper on <a href="#paper-gtfkan">microbe-drug association prediction</a> was accepted by <em>Journal of Molecular Biology</em>.
+    text: Our paper on microbe-drug association prediction was accepted by <a href="https://doi.org/10.1016/j.jmb.2025.169201"><em>Journal of Molecular Biology</em></a>.
