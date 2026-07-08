@@ -389,6 +389,11 @@ section[id] {
 }
 
 .opportunity-lead {
+  color: var(--global-text);
+  font-weight: 600;
+}
+
+.opportunity-highlight {
   color: var(--global-alert);
   font-weight: 800;
 }
