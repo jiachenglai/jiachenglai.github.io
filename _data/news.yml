@@ -1,7 +1,7 @@
 title: News & Opportunities
 
 opportunity:
-  lead: I am currently a Research Intern at <a href="https://suat-sz.edu.cn/en/">Shenzhen University of Advanced Technology (SUAT)</a>, advised by Hui Peng. <span class="opportunity-highlight">I remain open to future research opportunities, including fully funded Ph.D. programs, research-oriented Master's programs, and Research Assistant positions.</span>
+  lead: I am currently a Research Intern at <a href="https://suat-sz.edu.cn/en/">Shenzhen University of Advanced Technology (SUAT)</a>, advised by <a href="https://csce.suat-sz.edu.cn/info/1011/1273.htm">Prof. Hui Peng</a>. <span class="opportunity-highlight">I remain open to future research opportunities, including fully funded Ph.D. programs, research-oriented Master's programs, and Research Assistant positions.</span>
   intro: "My research focuses on reliable and calibrated machine learning for computational biology and drug discovery, especially:"
   focus:
     - title: Heterogeneous biomedical data integration
@@ -15,7 +15,7 @@ opportunity:
 items:
   - date: 2026/07
     datetime: 2026-07
-    text: I joined <a href="https://suat-sz.edu.cn/en/">Shenzhen University of Advanced Technology (SUAT)</a> as a Research Intern, advised by Hui Peng.
+    text: I joined <a href="https://suat-sz.edu.cn/en/">Shenzhen University of Advanced Technology (SUAT)</a> as a Research Intern, advised by <a href="https://csce.suat-sz.edu.cn/info/1011/1273.htm">Prof. Hui Peng</a>.
   - date: 2025/05
     datetime: 2025-05
     text: Our paper on microbe-drug association prediction was accepted by <a href="https://doi.org/10.1016/j.jmb.2025.169201"><em>Journal of Molecular Biology</em></a>.
