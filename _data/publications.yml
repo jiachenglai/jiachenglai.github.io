@@ -1,20 +1,7 @@
 title: Publications
 
+# Preserve this display order and append each new publication to the end.
 items:
-  - id: paper-nngcfcae
-    bib_key: zhang2026nngcfcae
-    image: assets/img/papers/nngcfcae.png
-    image_alt: Main figure for NNGCFCAE
-    title: "A Graph Convolutional Network Framework Integrating Nuclear Norm Minimization and Conditional Random Fields for Microbe-Disease Association Prediction"
-    authors: Zhen Zhang, Xianjun Hu, <strong>Jiacheng Lai</strong>, and Lei Wang
-    venue: <em>Algorithms</em>, 19(9), 763, 2026.
-    citation: "Zhang, Z., Hu, X., Lai, J., &amp; Wang, L. (2026). A Graph Convolutional Network Framework Integrating Nuclear Norm Minimization and Conditional Random Fields for Microbe-Disease Association Prediction. <em>Algorithms</em>, 19(9), 763."
-    abstract: NNGCFCAE integrates nuclear norm minimization, a conditional-random-field-enhanced graph convolutional network, and a residual multi-channel convolutional autoencoder to predict latent microbe-disease associations. Experiments on HMDAD and Disbiome show strong performance in AUC and AUPR, while case studies on obesity, asthma, and ulcerative colitis support the model's biological plausibility.
-    links:
-      - label: Paper
-        url: https://www.mdpi.com/1999-4893/19/9/763
-        external: true
-
   - id: paper-gtfkan
     bib_key: lai2025gtfkan
     image: assets/img/papers/gtfkan.png
@@ -55,4 +42,18 @@ items:
     links:
       - label: Code
         url: https://github.com/MagicWings49/MiDSFN
+        external: true
+
+  - id: paper-nngcfcae
+    bib_key: zhang2026nngcfcae
+    image: assets/img/papers/nngcfcae.png
+    image_alt: Main figure for NNGCFCAE
+    title: "A Graph Convolutional Network Framework Integrating Nuclear Norm Minimization and Conditional Random Fields for Microbe-Disease Association Prediction"
+    authors: Zhen Zhang, Xianjun Hu, <strong>Jiacheng Lai</strong>, and Lei Wang
+    venue: <em>Algorithms</em>, 19(9), 763, 2026.
+    citation: "Zhang, Z., Hu, X., Lai, J., &amp; Wang, L. (2026). A Graph Convolutional Network Framework Integrating Nuclear Norm Minimization and Conditional Random Fields for Microbe-Disease Association Prediction. <em>Algorithms</em>, 19(9), 763."
+    abstract: NNGCFCAE integrates nuclear norm minimization, a conditional-random-field-enhanced graph convolutional network, and a residual multi-channel convolutional autoencoder to predict latent microbe-disease associations. Experiments on HMDAD and Disbiome show strong performance in AUC and AUPR, while case studies on obesity, asthma, and ulcerative colitis support the model's biological plausibility.
+    links:
+      - label: Paper
+        url: https://www.mdpi.com/1999-4893/19/9/763
         external: true
