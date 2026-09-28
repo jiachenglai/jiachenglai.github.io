@@ -24,7 +24,7 @@ items:
     title: "BMFN: Multimodal Feature Fusion Network for Drug-Mtb Affinity Prediction and Anti-tuberculosis Drug Repurposing"
     authors: <strong>Jiacheng Lai</strong>, Zhen Zhang, Hao Yuan, and Lei Wang*
     status: Under review
-    venue: <em>Bioinformatics</em>
+    venue: <a href="https://www.sciencedirect.com/journal/journal-of-biomedical-informatics"><em>Journal of Biomedical Informatics</em></a>
     abstract: BMFN is a deep learning framework designed for drug-Mtb target affinity prediction. It integrates dual-sequence encoding with channel-spatial attention, supernode-coupled heterogeneous graph learning, and gradient-boosted molecular fingerprints. Across curated Mtb-specific datasets and general benchmarks, BMFN showed strong predictive performance, interpretability, and potential utility for anti-tuberculosis drug repurposing.
     links:
       - label: Code
@@ -57,3 +57,13 @@ items:
       - label: Paper
         url: https://www.mdpi.com/1999-4893/19/9/763
         external: true
+
+  - id: paper-slf-mtf
+    bib_key: lai2026slfmtf
+    image: assets/img/papers/slf-mtf.png
+    image_alt: Overview of the SLF-MTF framework
+    title: "SLF-MTF: Disease-Derived Pseudo-Associations and Multi-Scale Topological Fusion for Microbe-Drug Association Prediction"
+    authors: <strong>Jiacheng Lai</strong>&dagger;, Xiangyi Wang&dagger;, and Hui Peng*
+    status: Submitted
+    venue: <em>BMC Bioinformatics</em>
+    abstract: SLF-MTF derives pseudo-association connections from drug-disease and microbe-disease relationships while retaining known microbe-drug associations as training labels. Four separately trained graph Transformer encoders capture one-hop to four-hop neighborhoods, and a learned fusion module combines their representations. Experiments on MDAD and aBiofilm show the model's effectiveness for prioritizing candidate microbe-drug associations.
