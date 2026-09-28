@@ -9,10 +9,13 @@ opportunity:
     - title: Reliable low-data prediction
       text: building calibrated models for noisy, incomplete, and label-scarce biomedical data, with interest in uncertainty quantification and robust evaluation.
     - title: Drug discovery and bioinformatics applications
-      text: studying microbe-drug association prediction, cold-start drug-microbe learning, drug-Mtb affinity prediction, and anti-tuberculosis drug repurposing.
+      text: studying microbe-disease and microbe-drug association prediction, cold-start drug-microbe learning, drug-Mtb affinity prediction, and anti-tuberculosis drug repurposing.
   closing: If you are interested in mathematical, statistical, or machine learning approaches to computational biology and drug discovery, please feel free to contact me.
 
 items:
+  - date: 2026/09
+    datetime: 2026-09
+    text: Our paper on microbe-disease association prediction was published in <a href="https://doi.org/10.3390/a19090763"><em>Algorithms</em></a>.
   - date: 2026/07
     datetime: 2026-07
     text: I joined <a href="https://suat-sz.edu.cn/en/">Shenzhen University of Advanced Technology (SUAT)</a> as a Research Intern, advised by <a href="https://csce.suat-sz.edu.cn/info/1011/1273.htm">Prof. Hui Peng</a>.

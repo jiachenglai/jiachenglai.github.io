@@ -1,6 +1,20 @@
 title: Publications
 
 items:
+  - id: paper-nngcfcae
+    bib_key: zhang2026nngcfcae
+    image: assets/img/papers/nngcfcae.png
+    image_alt: Main figure for NNGCFCAE
+    title: "A Graph Convolutional Network Framework Integrating Nuclear Norm Minimization and Conditional Random Fields for Microbe-Disease Association Prediction"
+    authors: Zhen Zhang, Xianjun Hu, <strong>Jiacheng Lai</strong>, and Lei Wang
+    venue: <em>Algorithms</em>, 19(9), 763, 2026.
+    citation: "Zhang, Z., Hu, X., Lai, J., &amp; Wang, L. (2026). A Graph Convolutional Network Framework Integrating Nuclear Norm Minimization and Conditional Random Fields for Microbe-Disease Association Prediction. <em>Algorithms</em>, 19(9), 763."
+    abstract: NNGCFCAE integrates nuclear norm minimization, a conditional-random-field-enhanced graph convolutional network, and a residual multi-channel convolutional autoencoder to predict latent microbe-disease associations. Experiments on HMDAD and Disbiome show strong performance in AUC and AUPR, while case studies on obesity, asthma, and ulcerative colitis support the model's biological plausibility.
+    links:
+      - label: Paper
+        url: https://www.mdpi.com/1999-4893/19/9/763
+        external: true
+
   - id: paper-gtfkan
     bib_key: lai2025gtfkan
     image: assets/img/papers/gtfkan.png
@@ -34,9 +48,9 @@ items:
     image: assets/img/papers/midsfn.png
     image_alt: Main figure for MiDSFN
     title: "MiDSFN: A Novel Signature Fusion Learning Network for Potential Drug-Microbe Associations Prediction"
-    authors: <strong>Jiacheng Lai</strong>&dagger;, Xingye Xu&dagger;, Zhen Zhang*, Hao Yuan*, and Lei Wang
-    status: Manuscript completed
-    venue: Planned submission to BIBM 2026
+    authors: <strong>Jiacheng Lai</strong>&dagger;, Xingye Xu&dagger;, Zhen Zhang, Zhenyu Yang, Hao Yuan, and Lei Wang
+    status: Submitted
+    venue: <em>IEEE BIBM 2026</em>
     abstract: MiDSFN is a node-to-node deep learning framework for drug-microbe association prediction. It constructs features from intrinsic biological characteristics, including drug SMILES strings, microbial 16S rDNA sequences, and taxonomic nomenclature, and integrates graph convolution, self-attention, bilinear attention, and residual neural networks to support cross-dataset transfer and cold-start prediction for novel entities.
     links:
       - label: Code

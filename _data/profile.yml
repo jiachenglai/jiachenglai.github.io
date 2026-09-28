@@ -31,7 +31,7 @@ bio:
     structures, protein sequences, microbial genomic signals, biological networks, drug-response
     profiles, and multi-omics measurements.
   - >-
-    My previous work includes heterogeneous graph-based microbe-drug association prediction,
+    My previous work includes graph-based microbe-disease and microbe-drug association prediction,
     feature-independent cold-start drug-microbe association learning, and multimodal drug-Mtb
     affinity prediction for anti-tuberculosis drug repurposing.
 
